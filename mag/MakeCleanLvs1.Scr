@@ -1,5 +1,7 @@
-Script started on 2026-05-25 19:17:55+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="41"]
-[?2004h]0;ttuser@ubuntu-desktop: ~/nAbPlC/mag[01;32mttuser@ubuntu-desktop[00m:[01;34m~/nAbPlC/mag[00m$ PROJEXT_N[K[K[K[KCT_NAME=nAbPlC make clean lvs
+Script started on 2026-06-04 00:51:57+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+[?2004h]0;ttuser@ubuntu-desktop: ~/nAbPlC/mag[01;32mttuser@ubuntu-desktop[00m:[01;34m~/nAbPlC/mag[00m$ pwd
+[?2004l/home/ttuser/nAbPlC/mag
+[?2004h]0;ttuser@ubuntu-desktop: ~/nAbPlC/mag[01;32mttuser@ubuntu-desktop[00m:[01;34m~/nAbPlC/mag[00m$ PROJECT_NAME=nAbPlC make clean lvs
 [?2004lrm -f lvs.report *.lvs.spice *.nodes
 magic -rcfile /home/ttuser/pdk/sky130A/libs.tech/magic/sky130A.magicrc -noconsole -dnull tcl/extract_for_lvs.tcl nAbPlC
 
@@ -82,4 +84,4 @@ make: *** [Makefile:39: lvs] Error 1
 [?2004h]0;ttuser@ubuntu-desktop: ~/nAbPlC/mag[01;32mttuser@ubuntu-desktop[00m:[01;34m~/nAbPlC/mag[00m$ exit
 [?2004lexit
 
-Script done on 2026-05-25 19:18:20+00:00 [COMMAND_EXIT_CODE="2"]
+Script done on 2026-06-04 00:52:38+00:00 [COMMAND_EXIT_CODE="2"]
