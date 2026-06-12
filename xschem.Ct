@@ -1,0 +1,11 @@
+
+xschem/
+|----------------.----------------.-nAbPlC.sym
+|-.clipboard.sch `-nAbPlC.sch     `-recent_files
+|-simulation/
+| |-.Old/
+| | `-nAbPlC.spice
+| |-----------------.-----------------.-tb_nAbPlC.raw
+| `-.spiceinit      `-nAbPlC.spice    `-tb_nAbPlC.spice
+|-tb_nAbPlC.sch
+`-xschemrc
