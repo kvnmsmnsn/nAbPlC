@@ -1,4 +1,4 @@
-** sch_path: /home/ttuser/nAbPlC/tb_nAbPlC.sch
+** sch_path: /home/ttuser/nAbPlC/xschem/tb_nAbPlC.sch
 **.subckt tb_nAbPlC bIn aIn cIn
 *.ipin bIn
 *.ipin aIn
