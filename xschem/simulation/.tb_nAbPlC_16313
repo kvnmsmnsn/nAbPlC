@@ -1,0 +1,26 @@
+** sch_path: /home/ttuser/nAbPlC/xschem/tb_nAbPlC.sch
+**.subckt tb_nAbPlC bIn aIn cIn bIn aIn cIn
+*.ipin bIn
+*.ipin aIn
+*.ipin cIn
+*.ipin bIn
+*.ipin aIn
+*.ipin cIn
+R1 ?1 rslt ?1 yOt  1k m=1
+**** end_element
+C1 ?1 rslt ?1 GND  1p m=1
+**** end_element
+V1 ?1 net2 ?1 GND  1.8
+**** end_element
+V2 ?1 net1 ?1 GND  0
+**** end_element
+x1 ?1 aIn ?1 bIn ?1 cIn ?1 net2 ?1 yOt ?1 net1  nAbPlC
+**** end_element
+R2 ?1 rslt_parax ?1 yOt_p  1k m=1
+**** end_element
+C2 ?1 rslt_parax ?1 GND  1p m=1
+**** end_element
+V3 ?1 net4 ?1 GND  1.8
+**** end_element
+V4 ?1 net3 ?1 GND  0
+**** end_element

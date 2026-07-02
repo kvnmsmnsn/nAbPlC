@@ -43,8 +43,9 @@ divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node=rslt
-color=10
+node="rslt
+rslt_parax"
+color="10 4"
 dataset=-1
 unitx=1
 logx=0
