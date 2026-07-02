@@ -78,7 +78,34 @@ N 120 -110 250 -110 {
 lab=rslt}
 N 190 -110 190 -80 {
 lab=rslt}
-C {/home/ttuser/nAbPlC/nAbPlC.sym} -170 -70 0 0 {name=x1}
+N -370 460 -370 520 {
+lab=#net3}
+N -370 460 -310 460 {
+lab=#net3}
+N -440 440 -440 520 {
+lab=#net4}
+N -440 440 -310 440 {
+lab=#net4}
+N -510 420 -310 420 {
+lab=cIn}
+N -440 400 -310 400 {
+lab=bIn}
+N -440 380 -440 400 {
+lab=bIn}
+N -510 380 -440 380 {
+lab=bIn}
+N -370 380 -310 380 {
+lab=aIn}
+N -370 340 -370 380 {
+lab=aIn}
+N -510 340 -370 340 {
+lab=aIn}
+N -10 380 70 380 {
+lab=yOt_p}
+N 130 380 260 380 {
+lab=rslt_parax}
+N 200 380 200 410 {
+lab=rslt_parax}
 C {devices/res.sym} 90 -110 1 0 {name=R1
 value=1k
 footprint=1206
@@ -131,3 +158,32 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 C {devices/lab_wire.sym} 30 -110 0 0 {name=p6 sig_type=std_logic lab=yOt}
 C {devices/ipin.sym} -520 -150 0 0 {name=p1 lab=aIn}
 C {devices/ipin.sym} -520 -70 0 0 {name=p3 lab=cIn}
+C {nAbPlC.sym} -170 -70 0 0 {name=x1}
+C {devices/res.sym} 100 380 1 0 {name=R2
+value=1k
+footprint=1206
+device=resistor
+m=1}
+C {devices/capa.sym} 200 440 0 0 {name=C2
+m=1
+value=1p
+footprint=1206
+device="ceramic capacitor"}
+C {devices/vsource.sym} -440 550 0 0 {name=V3 value=1.8 savecurrent=false}
+C {devices/vsource.sym} -370 550 0 0 {name=V4 value=0 savecurrent=false}
+C {devices/ipin.sym} -510 380 0 0 {name=p4 lab=bIn
+}
+C {devices/gnd.sym} -440 580 0 0 {name=l4 lab=GND}
+C {devices/gnd.sym} -370 580 0 0 {name=l5 lab=GND}
+C {devices/gnd.sym} 200 470 0 0 {name=l6 lab=GND}
+C {devices/lab_wire.sym} 260 380 2 0 {name=p7 sig_type=std_logic lab=rslt_parax
+
+}
+C {devices/lab_wire.sym} 40 380 0 0 {name=p8 sig_type=std_logic lab=yOt_p}
+C {devices/ipin.sym} -510 340 0 0 {name=p9 lab=aIn}
+C {devices/ipin.sym} -510 420 0 0 {name=p10 lab=cIn}
+C {nAbPlC.sym} -160 420 0 0 {name=x2
+schematic=nAbPlC_parax.sim
+spice_sym_def="tcleval(.include [file normalize ../mag/nAbPlC.sim.spice])"
+tclcommand="textwindow[ file normalize ../mag/nAbPlC.sim.spice]"
+}
