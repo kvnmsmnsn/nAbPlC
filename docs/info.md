@@ -9,12 +9,30 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+Simple CMOS implementation of the function Y = not ((A and B) or C); with
+three PMOSes on top, one controlled by (cOp) in series with the other two in
+parallel; and three NMOSes on the bottom, with the two controlled by (aOp) and
+(bOp) in parallel, and the one controller by (cOp) in parallel with them.
 
 ## How to test
 
-Explain how to use your project
+Toggle (aOp) between low and high every 400 nanoseconds, toggle (bOp) between
+low and high every 200 nanoseconds, and toggle (cOp) between low and high every
+100 nanoseconds. Over the interval 0 nanoseconds to 800 ns, (yOut) should be
+high from time 0 to 100 ns, high from 200 ns to 300 ns, high from 400 to 500,
+and low over every other subinterval.
+
+aOp | bOp | cOp || yOut
+----+-----+-----++-----
+ 0  |  0  |  0  ||  1
+ 0  |  0  |  1  ||  0
+ 0  |  1  |  0  ||  1
+ 0  |  1  |  1  ||  0
+ 1  |  0  |  0  ||  1
+ 1  |  0  |  1  ||  0
+ 1  |  1  |  0  ||  0
+ 1  |  1  |  1  ||  0
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Signal generator, oscilloscope.
