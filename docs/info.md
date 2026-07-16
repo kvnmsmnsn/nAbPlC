@@ -20,7 +20,7 @@ Toggle (aOp) between low and high every 400 nanoseconds, toggle (bOp) between
 low and high every 200 nanoseconds, and toggle (cOp) between low and high every
 100 nanoseconds. Over the interval 0 nanoseconds to 800 ns, (yOut) should be
 high from time 0 to 100 ns, high from 200 ns to 300 ns, high from 400 to 500,
-and low over every other subinterval.
+and low over every other subinterval. Expect a rise time of 40 nanoseconds.
 
 aOp | bOp | cOp || yOut
 ----+-----+-----++-----
